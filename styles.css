@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -18,7 +18,7 @@ header {
 
 .title {
     font-size: 6rem;
-    color: #45d5eb; /* Light Blue Text */
+    color: #45d5eb; 
 }
 
 .logo {
@@ -27,33 +27,33 @@ header {
 }
 /* Navigation Styling */
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    display: flex;         /* Arrange items in a row */
-    justify-content: center; /* Center the navigation links */
-    padding: 0;            /* Remove default padding */
-    margin: 20px 0;        /* Add some margin for spacing */
+    list-style-type: none; 
+    display: flex;       
+    justify-content: center; 
+    padding: 0;           
+    margin: 20px 0;     
 }
 
 nav ul li {
-    margin: 0 15px; /* Add space between each link */
+    margin: 0 15px; 
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: white;          /* Make the text white */
-    font-weight: bold;     /* Make the text bold */
-    font-size: 18px;       /* Set a larger font size */
+    text-decoration: none; 
+    color: white;          
+    font-weight: bold;    
+    font-size: 18px;       
 }
 
 nav ul li a:hover {
-    color: lightblue;      /* Change color on hover */
+    color: lightblue;     
 }
 
 
 /* About Section */
 .about-section {
-    background-color:#45d5eb; /* Light Blue Text */
-    ; /* Light Blue */
+    background-color:#45d5eb; 
+    ; 
     padding: 50px 0;
 }
 /* Style the containers */
@@ -65,30 +65,22 @@ nav ul li a:hover {
     transition: background-color 0.3s;
 }
 body {
-    position: relative; /* Necessary for positioning the watermark */
+    position: relative;
 }
 
-.watermark {
-    position: fixed; /* Keep it fixed in the background */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
-    font-size: 10rem; /* Adjust the size as needed */
-    color: rgba(243, 234, 234, 0.947); /* White color with transparency */
-    z-index: -1; /* Send it behind other content */
-    pointer-events: none; /* Ignore pointer events to allow interaction with content */
-    user-select: none; /* Prevent selection of the watermark text */
-    text-align: center; /* Center the text */
-    font-family: Arial, sans-serif; /* Choose the desired font */
+.more-info {
+    display: none;
 }
 
 
-/* Change color on hover */
+
+
+
+
 .about-section .info-box:hover {
     background-color: rgb(106, 104, 104);
 }
 
-/* Style the 'Read More' button */
 .read-more-btn {
     background-color: lightblue;
     border: none;
@@ -100,7 +92,7 @@ body {
     margin-top: 10px;
 }
 
-/* Button hover effect */
+
 .read-more-btn:hover {
     background-color: #0099ff;
 }
@@ -163,12 +155,12 @@ body {
 }
 
 /* Gallery Section */
-/* Book-style Gallery Container */
+
 .gallery-container {
     position: relative;
     width: 400px;
     height: 300px;
-    perspective: 1000px; /* Enables 3D effect */
+    perspective: 1000px; 
     margin: auto;
 }
 
@@ -176,15 +168,15 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    transform-style: preserve-3d; /* Allows flipping effect */
-    transition: transform 1s; /* Smooth flip transition */
+    transform-style: preserve-3d; 
+    transition: transform 1s; 
 }
 
 .page {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Hide the back when flipped */
+    backface-visibility: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,11 +190,11 @@ body {
 }
 
 .page:nth-child(2) {
-    transform: rotateY(180deg); /* Prepare the second page for flipping */
+    transform: rotateY(180deg); 
 }
 
 .page:nth-child(3) {
-    transform: rotateY(360deg); /* Prepare the third page for flipping */
+    transform: rotateY(360deg);
 }
 
 /* Navigation Arrows */
@@ -232,8 +224,8 @@ body {
 
 .gallery {
     padding: 50px;
-    background-color:#45d5eb; /* Light Blue Text */
-    ; /* Light Blue */
+    background-color:#45d5eb;
+    ; 
 }
 
 .gallery-container {
@@ -268,7 +260,7 @@ body {
     background-color: #1e90ff;
 }
 
-/* Contact Section */
+
 .contact-section {
     padding: 50px;
     text-align: center;
