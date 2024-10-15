@@ -1,0 +1,282 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e; 
+    color: #fff;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #444;
+}
+
+.title {
+    font-size: 6rem;
+    color: #45d5eb; /* Light Blue Text */
+}
+
+.logo {
+    width: 150px;
+    margin-top: 20px;
+}
+/* Navigation Styling */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;         /* Arrange items in a row */
+    justify-content: center; /* Center the navigation links */
+    padding: 0;            /* Remove default padding */
+    margin: 20px 0;        /* Add some margin for spacing */
+}
+
+nav ul li {
+    margin: 0 15px; /* Add space between each link */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white;          /* Make the text white */
+    font-weight: bold;     /* Make the text bold */
+    font-size: 18px;       /* Set a larger font size */
+}
+
+nav ul li a:hover {
+    color: lightblue;      /* Change color on hover */
+}
+
+
+/* About Section */
+.about-section {
+    background-color:#45d5eb; /* Light Blue Text */
+    ; /* Light Blue */
+    padding: 50px 0;
+}
+/* Style the containers */
+.about-section .info-box {
+    background-color: grey;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+body {
+    position: relative; /* Necessary for positioning the watermark */
+}
+
+.watermark {
+    position: fixed; /* Keep it fixed in the background */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    font-size: 10rem; /* Adjust the size as needed */
+    color: rgba(243, 234, 234, 0.947); /* White color with transparency */
+    z-index: -1; /* Send it behind other content */
+    pointer-events: none; /* Ignore pointer events to allow interaction with content */
+    user-select: none; /* Prevent selection of the watermark text */
+    text-align: center; /* Center the text */
+    font-family: Arial, sans-serif; /* Choose the desired font */
+}
+
+
+/* Change color on hover */
+.about-section .info-box:hover {
+    background-color: rgb(106, 104, 104);
+}
+
+/* Style the 'Read More' button */
+.read-more-btn {
+    background-color: lightblue;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+.read-more-btn:hover {
+    background-color: #0099ff;
+}
+
+
+.blue-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+
+.info-box {
+    background-color: #444;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.toggle-arrow {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    display: block;
+}
+
+.more-info {
+    display: none;
+    background-color: #666;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Workshops Section */
+
+.workshops {
+    padding: 50px;
+    background-color: #333;
+    text-align: center; 
+}
+
+
+.workshop-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.workshop-box {
+    width: 30%;
+    text-align: center;
+}
+
+.workshop-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Gallery Section */
+/* Book-style Gallery Container */
+.gallery-container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    perspective: 1000px; /* Enables 3D effect */
+    margin: auto;
+}
+
+.book {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Allows flipping effect */
+    transition: transform 1s; /* Smooth flip transition */
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back when flipped */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page:nth-child(2) {
+    transform: rotateY(180deg); /* Prepare the second page for flipping */
+}
+
+.page:nth-child(3) {
+    transform: rotateY(360deg); /* Prepare the third page for flipping */
+}
+
+/* Navigation Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: lightblue;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.left-arrow {
+    left: -50px;
+}
+
+.right-arrow {
+    right: -50px;
+}
+
+.arrow:hover {
+    background-color: grey;
+    color: white;
+}
+
+.gallery {
+    padding: 50px;
+    background-color:#45d5eb; /* Light Blue Text */
+    ; /* Light Blue */
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-slider {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+.image-slider img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.arrow {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: #1e90ff;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+}
+
+.contact-icons img {
+    width: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+}
